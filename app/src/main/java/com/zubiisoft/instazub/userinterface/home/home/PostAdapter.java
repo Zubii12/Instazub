@@ -1,4 +1,4 @@
-package com.zubiisoft.instazub.userinterface.home;
+package com.zubiisoft.instazub.userinterface.home.home;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -26,7 +26,7 @@ public class PostAdapter extends
     private LinkedList<Post> mPosts;
     private PostAdapter mAdapter;
 
-    PostAdapter(Context context, LinkedList<Post> posts) {
+    public PostAdapter(Context context, LinkedList<Post> posts) {
         mInflater = LayoutInflater.from(context);
         mContext = context;
         mPosts = posts;
