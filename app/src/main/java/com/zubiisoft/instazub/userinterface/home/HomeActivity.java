@@ -4,14 +4,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,21 +18,12 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import com.zubiisoft.instazub.InstazubApplication;
 import com.zubiisoft.instazub.R;
-import com.zubiisoft.instazub.constants.Constant;
-import com.zubiisoft.instazub.model.Post;
-import com.zubiisoft.instazub.userinterface.conversation.ConversationActivity;
-import com.zubiisoft.instazub.userinterface.friends.FriendsActivity;
 import com.zubiisoft.instazub.userinterface.home.friends.FriendsFragment;
 import com.zubiisoft.instazub.userinterface.home.home.HomeFragment;
 import com.zubiisoft.instazub.userinterface.home.notifications.NotificationFragment;
 import com.zubiisoft.instazub.userinterface.home.posts.AddPostFragment;
 import com.zubiisoft.instazub.userinterface.home.profile.ProfileFragment;
 import com.zubiisoft.instazub.userinterface.main.MainActivity;
-
-
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
 
 public class HomeActivity extends AppCompatActivity implements
         View.OnClickListener{

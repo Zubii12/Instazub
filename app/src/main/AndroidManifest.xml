@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/InstazubTheme">
-        <activity android:name=".userinterface.friends.FriendsActivity"/>
         <activity android:name=".userinterface.room.RoomActivity"
             android:parentActivityName=".userinterface.conversation.ConversationActivity">
             <meta-data

@@ -1,4 +1,4 @@
-package com.zubiisoft.instazub.userinterface.friends;
+package com.zubiisoft.instazub.userinterface.home.friends;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -18,7 +18,6 @@ import java.util.LinkedList;
 
 public class FriendsAdapter extends
         RecyclerView.Adapter<FriendsAdapter.FriendsViewHolder> {
-
 
     public interface OnFriendCallback {
         void onFriendCallback(User user);
