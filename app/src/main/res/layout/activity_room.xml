@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userinterface.room.RoomActivity">
+
+    <RelativeLayout
+        android:id="@+id/actionBarTop_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/colorPalette2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/message_recyclerView">
+
+        <ImageView
+            android:id="@+id/avatar_imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_google_24"
+            android:layout_alignParentStart="true"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewTheme"
+            android:text="Zubii"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/info_room"
+            android:layout_toEndOf="@id/avatar_imageView"/>
+
+        <ImageView
+            android:id="@+id/info_room"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_google_24"
+            android:layout_alignParentEnd="true"
+            tools:ignore="ContentDescription"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/actionBarTop_relativeLayout"
+        app:layout_constraintBottom_toTopOf="@id/actionBarBottom_relativeLayout"/>
+
+    <RelativeLayout
+        android:id="@+id/actionBarBottom_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/colorPalette2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message_recyclerView"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/message_editText"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:padding="6dp"
+            android:hint="@string/message_text"
+            android:autofillHints="@string/message_text"
+            android:inputType="text"
+            android:background="@color/colorPalette1"
+            android:layout_toStartOf="@id/sendMessage_imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/sendMessage_imageView"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_conversation_24"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

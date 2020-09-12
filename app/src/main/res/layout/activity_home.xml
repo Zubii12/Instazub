@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    tools:context=".userinterface.home.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/actionBarTop_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPalette2"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/post_relativeLayout">
+
+        <ImageView
+            android:id="@+id/conversation_imageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_conversation_24"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/camera_imageView"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_ar_camera" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/post_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/actionBarTop_relativeLayout"
+        app:layout_constraintBottom_toTopOf="@id/actionBarBottom_relativeLayout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/post_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            tools:listitem="@layout/post_item"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/actionBarBottom_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post_relativeLayout"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/home_imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_home_run"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/friends_imageView"
+            android:layout_width="40dp"
+            android:layout_height="47dp"
+            android:src="@drawable/ic_friend"
+            android:layout_marginHorizontal="100dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/add_imageView"
+            android:layout_width="37dp"
+            android:layout_height="39dp"
+            android:src="@drawable/ic_add"
+            android:layout_centerHorizontal="true"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/profile_imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_user"
+            android:layout_marginHorizontal="270dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/notification_imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_bell"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

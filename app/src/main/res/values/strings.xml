@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Instazub</string>
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+    <string name="login_with_email_text">Login with email</string>
+    <string name="login_with_google_text">Login with google</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_or_phone_text">Email or phone</string>
+    <string name="password_text">Password</string>
+    <string name="like_text">I like it</string>
+    <string name="comment_text">Comment</string>
+    <string name="title_activity_main_activityzzzzzz">MainActivityzzzzzz</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="register_with_email_text">Register with email</string>
+    <string name="register_with_google_text">Register with Google</string>
+    <string name="first_name_text">First Name</string>
+    <string name="last_name_text">Last Name</string>
+    <string name="sign_out_text">Sign out</string>
+    <string name="message_text">Message...</string>
+</resources>

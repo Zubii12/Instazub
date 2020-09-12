@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "396074750121",
+    "firebase_url": "https://instazub-1205.firebaseio.com",
+    "project_id": "instazub-1205",
+    "storage_bucket": "instazub-1205.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396074750121:android:21175116aee9a706e659b8",
+        "android_client_info": {
+          "package_name": "com.zubiisoft.instazub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396074750121-7g7mn0ij8lmbnlm492ktjmigfe7j5cmq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zubiisoft.instazub",
+            "certificate_hash": "e3f86c1dfa4f5a6c92168916d4e495d9db1b181b"
+          }
+        },
+        {
+          "client_id": "396074750121-v175709m02266bf6n6397vu0fra7ncft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnKdHOil26SNbikF6BZRKg-kavAKXWcbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396074750121-v175709m02266bf6n6397vu0fra7ncft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

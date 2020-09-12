@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentRegister_constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/colorPalette1"
+    android:padding="16dp"
+    tools:context=".userinterface.register.RegisterFragment">
+
+    <TextView
+        android:id="@+id/firstName_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name_text"
+        style="@style/TextViewTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/firstName_editText"/>
+
+    <EditText
+        android:id="@+id/firstName_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_name_text"
+        android:autofillHints="@string/first_name_text"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstName_textView"
+        app:layout_constraintBottom_toTopOf="@id/lastName_textView"/>
+
+    <TextView
+        android:id="@+id/lastName_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name_text"
+        style="@style/TextViewTheme"
+        app:layout_constraintStart_toStartOf="@id/password_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstName_editText"
+        app:layout_constraintBottom_toTopOf="@id/lastName_editText" />
+
+    <EditText
+        android:id="@+id/lastName_editText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autofillHints="@string/last_name_text"
+        android:hint="@string/last_name_text"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/password_editText"
+        app:layout_constraintEnd_toEndOf="@id/password_editText"
+        app:layout_constraintTop_toBottomOf="@id/lastName_textView"
+        app:layout_constraintBottom_toTopOf="@id/emailPhone_textView" />
+
+    <TextView
+        android:id="@+id/emailPhone_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email_or_phone_text"
+        style="@style/TextViewTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastName_editText"
+        app:layout_constraintBottom_toTopOf="@id/emailPhone_editText"/>
+
+    <EditText
+        android:id="@+id/emailPhone_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_or_phone_text"
+        android:autofillHints="@string/email_or_phone_text"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailPhone_textView"
+        app:layout_constraintBottom_toTopOf="@id/password_textView"/>
+
+    <TextView
+        android:id="@+id/password_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/password_text"
+        style="@style/TextViewTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailPhone_editText"
+        app:layout_constraintBottom_toTopOf="@id/password_editText"/>
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/password_text"
+        android:hint="@string/password_text"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_textView"
+         app:layout_constraintBottom_toTopOf="@id/register_button"/>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_text"
+        style="@style/ButtonTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_editText"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color" name="colorPalette1"/>
+    <attr format="color" name="colorPalette2"/>
+    <attr format="color" name="colorPalette3"/>
+</resources>

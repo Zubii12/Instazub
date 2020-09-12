@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/postItem_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/avatar_imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_google_24" />
+    <TextView
+        android:id="@+id/name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zubascu Ionut"
+        style="@style/TextViewTheme"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/time_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:id="@+id/content_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_banner_foreground"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:id="@+id/like_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_heart"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/content_imageView"/>
+    <TextView
+        android:id="@+id/like_textView"
+        style="@style/TextViewTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/content_imageView"
+        android:text="@string/like_text" />
+
+    <ImageView
+        android:id="@+id/comment_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_comment"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/content_imageView"/>
+    <TextView
+        android:id="@+id/comment_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_text"
+        style="@style/TextViewTheme"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/content_imageView"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

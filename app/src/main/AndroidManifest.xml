@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zubiisoft.instazub">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/InstazubTheme">
+        <activity android:name=".userinterface.friends.FriendsActivity"/>
+        <activity android:name=".userinterface.room.RoomActivity"
+            android:parentActivityName=".userinterface.conversation.ConversationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".userinterface.conversation.ConversationActivity"/>
+        </activity>
+        <activity android:name=".userinterface.conversation.ConversationActivity"
+            android:parentActivityName=".userinterface.home.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".userinterface.home.HomeActivity" />
+        </activity>
+        <activity android:name=".userinterface.home.HomeActivity" />
+        <activity
+            android:name=".userinterface.register.RegisterActivity"
+            android:parentActivityName=".userinterface.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".userinterface.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".userinterface.login.LoginActivity"
+            android:parentActivityName=".userinterface.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".userinterface.main.MainActivity" />
+        </activity>
+        <activity android:name=".userinterface.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

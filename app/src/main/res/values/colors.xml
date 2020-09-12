@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--
+    <color name="colorPalette1">#FAFAFA</color>
+    <color name="colorPalette2">#E3F2FD</color>
+    <color name="colorPalette3">#D2DBD9</color>
+    E2E8E7 - color palette 3
+    D2DBD9
+     -->
+
+
+    <color name="colorPalette1">#FAFAFA</color>
+    <color name="colorPalette2">#E3F2FD</color>
+    <color name="colorPalette3">#789191</color>
+
+
+</resources>
