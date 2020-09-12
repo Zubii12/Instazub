@@ -17,7 +17,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.zubiisoft.instazub.InstazubApplication;
 import com.zubiisoft.instazub.R;
-import com.zubiisoft.instazub.constants.Constant;
 import com.zubiisoft.instazub.database.Database;
 import com.zubiisoft.instazub.interfaces.RegisterListener;
 import com.zubiisoft.instazub.model.Conversation;
@@ -27,7 +26,6 @@ import com.zubiisoft.instazub.userinterface.home.HomeActivity;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity implements
         View.OnClickListener,

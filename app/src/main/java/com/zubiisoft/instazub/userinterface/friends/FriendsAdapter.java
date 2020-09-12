@@ -1,4 +1,4 @@
-package com.zubiisoft.instazub.userinterface.home.friends;
+package com.zubiisoft.instazub.userinterface.friends;
 
 import android.content.Context;
 import android.view.LayoutInflater;

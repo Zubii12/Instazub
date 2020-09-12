@@ -18,11 +18,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import com.zubiisoft.instazub.InstazubApplication;
 import com.zubiisoft.instazub.R;
-import com.zubiisoft.instazub.userinterface.home.friends.FriendsFragment;
-import com.zubiisoft.instazub.userinterface.home.home.HomeFragment;
-import com.zubiisoft.instazub.userinterface.home.notifications.NotificationFragment;
-import com.zubiisoft.instazub.userinterface.home.posts.AddPostFragment;
-import com.zubiisoft.instazub.userinterface.home.profile.ProfileFragment;
+import com.zubiisoft.instazub.userinterface.friends.FriendsFragment;
+import com.zubiisoft.instazub.userinterface.notifications.NotificationFragment;
+import com.zubiisoft.instazub.userinterface.posts.AddPostFragment;
+import com.zubiisoft.instazub.userinterface.profile.ProfileFragment;
 import com.zubiisoft.instazub.userinterface.main.MainActivity;
 
 public class HomeActivity extends AppCompatActivity implements

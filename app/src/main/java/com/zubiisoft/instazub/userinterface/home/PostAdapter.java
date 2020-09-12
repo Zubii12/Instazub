@@ -1,4 +1,4 @@
-package com.zubiisoft.instazub.userinterface.home.home;
+package com.zubiisoft.instazub.userinterface.home;
 
 import android.content.Context;
 import android.view.LayoutInflater;

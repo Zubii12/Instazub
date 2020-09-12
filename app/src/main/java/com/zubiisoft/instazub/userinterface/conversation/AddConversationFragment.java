@@ -19,7 +19,7 @@ import com.zubiisoft.instazub.database.Database;
 import com.zubiisoft.instazub.interfaces.UserCallback;
 import com.zubiisoft.instazub.model.Conversation;
 import com.zubiisoft.instazub.model.User;
-import com.zubiisoft.instazub.userinterface.home.friends.FriendsAdapter;
+import com.zubiisoft.instazub.userinterface.friends.FriendsAdapter;
 
 import org.jetbrains.annotations.NotNull;
 

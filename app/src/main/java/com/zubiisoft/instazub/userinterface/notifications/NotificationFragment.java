@@ -1,4 +1,4 @@
-package com.zubiisoft.instazub.userinterface.home.notifications;
+package com.zubiisoft.instazub.userinterface.notifications;
 
 import android.os.Bundle;
 
@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 
 import com.zubiisoft.instazub.R;
 
-import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 /**

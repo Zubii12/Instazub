@@ -18,7 +18,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.zubiisoft.instazub.InstazubApplication;
 import com.zubiisoft.instazub.R;
-import com.zubiisoft.instazub.constants.Constant;
 
 import com.zubiisoft.instazub.interfaces.LoginListener;
 import com.zubiisoft.instazub.userinterface.home.HomeActivity;

@@ -1,4 +1,4 @@
-package com.zubiisoft.instazub.userinterface.home.posts;
+package com.zubiisoft.instazub.userinterface.profile;
 
 import android.os.Bundle;
 
@@ -16,19 +16,17 @@ import org.jetbrains.annotations.NotNull;
 /**
  *
  */
-public class AddPostFragment extends Fragment {
-
-    public AddPostFragment() { }
+public class ProfileFragment extends Fragment {
 
     @NonNull
-    public static AddPostFragment newInstance() {
-        return new AddPostFragment();
+    public static ProfileFragment newInstance() {
+        return new ProfileFragment();
     }
 
     @Override
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add_post, container, false);
+        return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 }
