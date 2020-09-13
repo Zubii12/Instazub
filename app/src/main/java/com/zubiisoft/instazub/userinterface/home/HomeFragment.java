@@ -76,7 +76,7 @@ public class HomeFragment extends Fragment implements
         mConversationButton = mRootView.findViewById(R.id.conversation_imageView);
         mRecyclerView = mRootView.findViewById(R.id.post_recyclerView);
 
-        mDatabase = InstazubApplication.getFirebaseFireStore();
+        mDatabase = InstazubApplication.getFirebaseFirestore();
         mAuth = InstazubApplication.getFirebaseAuth();
 
         mUid = mAuth.getUid();

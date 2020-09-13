@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
 import com.zubiisoft.instazub.database.Database;
 
 import org.jetbrains.annotations.NotNull;
@@ -26,8 +27,13 @@ public class InstazubApplication extends Application {
     }
 
     @NonNull
-    public static FirebaseFirestore getFirebaseFireStore() {
+    public static FirebaseFirestore getFirebaseFirestore() {
         return FirebaseFirestore.getInstance();
+    }
+
+    @NotNull
+    public static FirebaseStorage getFirebaseStorage() {
+        return FirebaseStorage.getInstance();
     }
 
     @NonNull

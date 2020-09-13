@@ -25,4 +25,7 @@
     <string name="last_name_text">Last Name</string>
     <string name="sign_out_text">Sign out</string>
     <string name="message_text">Message...</string>
+    <string name="gallery_text">Gallery</string>
+    <string name="image_text">Image</string>
+    <string name="video_text">Video</string>
 </resources>

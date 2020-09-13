@@ -10,7 +10,8 @@
         android:id="@+id/avatar_imageView"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:src="@drawable/ic_google_24" />
+        android:src="@drawable/ic_google_24"
+        tools:ignore="ContentDescription" />
     <TextView
         android:id="@+id/name_textView"
         android:layout_width="wrap_content"

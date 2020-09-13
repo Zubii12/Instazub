@@ -5,75 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="0dp"
     tools:context=".userinterface.home.HomeActivity">
-
-    <!--
-    <FrameLayout
-        android:id="@+id/home_frameLayout"
-        android:name="com.zubiisoft.instazub.userinterface.home.home
-        .HomeFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf=
-            "@id/actionBarBottom_relativeLayout"
-        tools:layout="@layout/fragment_home" />
-
-    <FrameLayout
-        android:id="@+id/friends_frameLayout"
-        android:name="com.zubiisoft.instazub.userinterface.home.friends
-        .FriendsFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf=
-            "@id/actionBarBottom_relativeLayout"
-        tools:layout="@layout/fragment_friends" />
-
-    <FrameLayout
-        android:id="@+id/addPost_frameLayout"
-        android:name="com.zubiisoft.instazub.userinterface.home.posts
-        .AddPostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf=
-            "@id/actionBarBottom_relativeLayout"
-        tools:layout="@layout/fragment_add_post" />
-
-    <FrameLayout
-        android:id="@+id/profile_frameLayout"
-        android:name="com.zubiisoft.instazub.userinterface.home.profile
-        .ProfileFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf=
-            "@id/actionBarBottom_relativeLayout"
-        tools:layout="@layout/fragment_profile" />
-
-    <FrameLayout
-        android:id="@+id/notification_frameLayout"
-        android:name="com.zubiisoft.instazub.userinterface.home
-        .notifications.NotificationFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf=
-            "@id/actionBarBottom_relativeLayout"
-        tools:layout="@layout/fragment_notification" />
-    -->
 
     <FrameLayout
         android:id="@+id/homeFragmentContainer_frameLayout"

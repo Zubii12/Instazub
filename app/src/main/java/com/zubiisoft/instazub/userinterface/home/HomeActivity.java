@@ -16,6 +16,8 @@ import android.widget.ImageView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.zubiisoft.instazub.InstazubApplication;
 import com.zubiisoft.instazub.R;
 import com.zubiisoft.instazub.userinterface.friends.FriendsFragment;
@@ -43,7 +45,6 @@ public class HomeActivity extends AppCompatActivity implements
     private FirebaseFirestore mDatabase;
     private FirebaseAuth mAuth;
 
-
     private FragmentManager mFragmentManager;
 
     @Override
@@ -55,8 +56,11 @@ public class HomeActivity extends AppCompatActivity implements
         initListeners();
         initRecyclerView();
 
+
         startHomeFragment();
+
     }
+
 
     private void initInstances() {
         mContext = this;
@@ -67,7 +71,7 @@ public class HomeActivity extends AppCompatActivity implements
         mProfileButton = findViewById(R.id.profile_imageView);
         mNotificationButton = findViewById(R.id.notification_imageView);
 
-        mDatabase = InstazubApplication.getFirebaseFireStore();
+        mDatabase = InstazubApplication.getFirebaseFirestore();
         mAuth = InstazubApplication.getFirebaseAuth();
 
         mUid = mAuth.getUid();

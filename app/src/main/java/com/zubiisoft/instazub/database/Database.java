@@ -10,7 +10,6 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
@@ -61,7 +60,7 @@ public class Database {
     private String mUid;
 
     private Database() {
-        mDatabase = InstazubApplication.getFirebaseFireStore();
+        mDatabase = InstazubApplication.getFirebaseFirestore();
         mAuth = InstazubApplication.getFirebaseAuth();
         mUid = mAuth.getUid();
     }
